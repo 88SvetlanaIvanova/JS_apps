@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beer Listing</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <audio id="beer-sound" src="beerSound.mp3.mp3"></audio>
+  
+</head>
+<body>
+  <header>
+
+    <div class="left-section">
+      <form id="search-form" class="search-form">
+          <input type="text" class="search-input" placeholder="Search">
+          <button type="submit" class="search-btn">Search</button>
+          <button id="reset-btn" class="reset-btn" type="button">Reset</button>
+    </div>
+
+
+    <div class="right-section">
+      <button id="random-btn" class="random-btn" type="button">Get Random Beer</button>
+    </div>
+    
+  </form>
+  </header>
+  
+  
+  
+  <div id="container">
+    <h1>Beer Listing</h1>
+    <div class="grid-container">
+      <!-- Grid items (results) go here -->
+      <ul id="beer-list"></ul>
+    </div>
+    
+    
+    <h2>Favorite Beers</h2>
+    <div class="grid-container">
+      <!-- Grid items (results) go here -->
+      <ul id="favorite-list"></ul>
+    </div>
+    
+    
+  </div>
+  
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+<script src="index.js"></script>
+</html>
